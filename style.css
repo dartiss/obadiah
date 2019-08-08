@@ -11,3 +11,21 @@
  Text Domain: susty
  Tags:
 */
+
+/**
+ * Add smooth scrolling to the whole document
+ */
+
+html {
+	scroll-behavior: smooth;
+}
+
+/**
+ *Switch off scroll behavior, dependant on Reduce Motion API
+ */
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
